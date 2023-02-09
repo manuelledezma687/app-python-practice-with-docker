@@ -1,0 +1,9 @@
+services:
+  app-python-practice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app-python-practice
+    ports:
+      - '80:80'
